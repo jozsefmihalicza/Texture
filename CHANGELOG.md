@@ -1,5 +1,6 @@
 ## master
 * Add your own contributions to the next release on the line below this with your name.
+- Fix build on 32-bit simulator in Xcode 9.3 and later, caused by `Thread-local storage is not supported on this architecture.` [Adlai Holler](https://github.com/Adlai-Holler)
 
 ## 2.7
 - Fix pager node for interface coalescing. [Max Wang](https://github.com/wsdwsd0829) [#877](https://github.com/TextureGroup/Texture/pull/877)
