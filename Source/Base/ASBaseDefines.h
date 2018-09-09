@@ -30,6 +30,14 @@
 # define ASDISPLAYNODE_EXTERN_C_END
 #endif
 
+#if defined(__cplusplus)
+ # define var auto
+ # define let const auto
+ #else
+ # define var __auto_type
+ # define let const __auto_type
+#endif
+
 #ifdef __GNUC__
 # define ASDISPLAYNODE_GNUC(major, minor) \
 (__GNUC__ > (major) || (__GNUC__ == (major) && __GNUC_MINOR__ >= (minor)))
